@@ -408,7 +408,7 @@ class HTTPConnector extends HttpClientCurl
                 "location" => $location,
                 "ranges" => array(),
             ),
-            "limit" => 35,
+            "limit" => 5,
             "limit_alu" => 3,
         );
 
