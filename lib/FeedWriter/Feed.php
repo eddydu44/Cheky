@@ -233,7 +233,6 @@ abstract class Feed
 	public function generateFeed()
 	{
 		return $this->makeHeader()
-			. $this->makeChannels()
 			. $this->makeItems()
 			. $this->makeFooter();
 	}
