@@ -24,7 +24,7 @@ $files = array_diff(scandir(DOCUMENT_ROOT."/var/feeds"), array(".", ".."));
 foreach ($files AS $file) {
     $file = DOCUMENT_ROOT."/var/feeds/".$file;
     $mtime = filemtime($file);
-    if (($mtime + 20 * 60) < time()) {
+    if (($mtime + 60) < time()) {
         unlink($file);
     }
 }
