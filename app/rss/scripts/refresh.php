@@ -89,7 +89,6 @@ if (isset($error)) {
     $item->setTitle("Erreur lors de la récupération des annonces");
     $item->setLink("");
     $item->setDescription($error);
-    $item->setDate(time());
     $item->setId(md5(time()));
     $feeds->addItem($item);
 
